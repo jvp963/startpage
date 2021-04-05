@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JVP Start Page</title>
+</head>
+
+<body>
+<center>
+<form method="get" action="https://www.google.com/search">
+<input type="text" name="q" size="31" value="" autofocus>
+<input type="submit" value="Google">
+&nbsp;&nbsp;&nbsp;<a href="rebuild.cgi">(rebuild page data)</a>
+</form>
+<table width="100%">
+<tr>
+<td width="50%" align="left" valign="top">
+<pre>
+Weather: <a href="http://www.wunderground.com/forecast/US/KS/great-bend/67530">Wund</a>&nbsp;&nbsp;&nbsp;<a href="http://www.weather.gov/ict/">NWS-ICT</a>&nbsp;&nbsp;&nbsp;<a href="http://www.spc.noaa.gov">SPC</a>
+
+<!--#include virtual="/jvp/weather.txt" --></pre>
+</td>
+<td width="50%" align="left" valign="top">
+<h3>Running stats (<a href="https://docs.google.com/spreadsheets/d/1w9ngbNXNbZonkkeso0nzd9QPK92IibAPo-pbfwaFBDY/edit#gid=0">training log</a>)</h3>
+<!--#include virtual="/jvp/runsummary.html" -->
+
+<h3>Weekly Mileage</h3>
+<img alt="Mileage graph" src="images/running/weekly.png" width="400" height="200"/>
+
+<h3>Weight Info</h3>
+<!--#include virtual="/jvp/weightstats.html" -->
+<img alt="Weight graph" src="images/running/weight.png" width="500" height="200"/>
+
+<h3>Shoe Mileage</h3>
+<!--#include virtual="/jvp/shoedata.html" -->
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
